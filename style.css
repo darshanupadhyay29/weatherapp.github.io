@@ -1,0 +1,10 @@
+html,
+body {
+    viewport-fit: 100%;
+    background-image: url("weather2.avif");
+}
+
+.btn {
+    color: rgb(227, 229, 231);
+    background: rgb(8, 94, 128);
+}

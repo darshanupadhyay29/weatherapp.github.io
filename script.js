@@ -26,6 +26,32 @@ const getWeather = (city) => {
         .catch(err => console.error(err));
 }
 
+// Function to toggle the dark theme
+function toggleDarkTheme() {
+  const body = document.body;
+  body.classList.toggle('dark-theme'); // Toggle the 'dark-theme' class on the body element
+
+  // Store the theme preference in local storage
+  if (body.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+// Find the button element by its ID
+const themeToggleBtn = document.getElementById('theme-toggle');
+
+// Check the initial theme preference from local storage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  toggleDarkTheme(); // Apply the dark theme if it was previously selected
+}
+
+// Add a click event listener to the button
+themeToggleBtn.addEventListener('click', toggleDarkTheme);
+
+
 
 
 submit.addEventListener("click", (e) => {

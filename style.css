@@ -16,3 +16,9 @@ body {
   }
   /* Add more styles as needed */
 }
+/* Dark theme styles */
+.dark-theme {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+  /* Add more styles as needed */
+}

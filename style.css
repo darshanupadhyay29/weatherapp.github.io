@@ -8,3 +8,11 @@ body {
     color: rgb(227, 229, 231);
     background: rgb(8, 94, 128);
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+  }
+  /* Add more styles as needed */
+}

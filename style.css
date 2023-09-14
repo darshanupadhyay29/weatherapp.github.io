@@ -1,11 +1,13 @@
-html,
-body {
-    viewport-fit: 100%;
+html, body {
+    height: 100%; /* Set the height of the html and body elements to 100% to cover the viewport. */
+    margin: 0; /* Remove default margins to ensure full coverage. */
     background-image: url("weather2.avif");
+    background-size: cover; /* Scale the background image to cover the entire element. */
+    background-repeat: no-repeat; /* Prevent the background image from repeating. */
+    background-position: center; /* Center the background image. */
 }
 
 .btn {
     color: rgb(227, 229, 231);
     background: rgb(8, 94, 128);
 }
-
